@@ -1,0 +1,199 @@
+/* A. Hacks and fixes */
+
+/* A.1 HTML5 Fix */
+section, article, header, footer, nav, aside, hgroup { display: block; }
+
+/* A.2 Clear fix */
+
+.clearfix:after, .row:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix, .row { display: inline-block; }
+
+/* A.2.1 Hides from IE5/Mac \*/
+* html .clearfix, * html .row { height: 1px; }
+
+.clearfix, .row  { display: block; }
+/* End hide from IE5/Mac */
+
+/* 1. Generic */
+
+html, body { height: 100%; }
+
+body {
+	margin: 0 auto;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 0.875em;
+	background: #444;
+}
+
+a {
+	color: #f00;
+	outline: none;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+a img { border: 0; }
+
+img { max-width: 100%; }
+
+form { margin: 0; padding: 0; }
+
+form input, form button { -webkit-appearance: none; }
+
+.left { float: left; }
+.right { float: right; }
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+.mt0 { margin-top: 0; }
+
+/* 2. Switcher */
+
+#switcher {
+	position: fixed;
+	z-index: 10;
+	display: block;
+	width: 100%;
+	height: 40px;
+	background-color: #000;
+	color: #fff;
+}
+
+#switcher a { color: #999; }
+#switcher a:hover { color: #fff; }
+
+#switcher ul.switcher-tools {
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#switcher ul li {
+	float: left;
+	padding: 0 10px;
+	line-height: 40px;
+}
+
+#switcher ul li.logo { padding: 0; }
+
+#switcher ul li.logo a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: #f00 url(../img/logo-qbkl.png) no-repeat center center;
+	text-indent: -9999px;
+}
+
+#switcher ul li.logo a:hover { background-color: #222; }
+
+#switcher strong { font-weight: 800; }
+
+#switcher .theme-select { min-width: 200px; background-color: #111; padding: 0; position: relative; }
+
+#switcher .theme-select a {
+	width: 180px;
+	display: block;
+	padding: 10px 10px;
+	overflow: hidden;
+}
+
+#switcher .theme-select a.top-item {
+	padding: 0 10px;
+}
+
+#switcher .theme-select a strong {
+	float: left;
+	font-weight: 600;
+}
+
+#switcher .theme-select a label {
+	float: right;
+	font-size: 8px;
+	padding: 0 3px;
+	background-color: #555;
+	border-radius: 3px;
+	color: #fff;
+}
+
+#switcher .theme-select a label.html { background-color: #16a085; }
+#switcher .theme-select a label.wp { background-color: #0896f4; }
+#switcher .theme-select a label.htmlwp { background-color: #ff6000; }
+#switcher .theme-select a label.ghost { background-color: #5ba4e5; }
+#switcher .theme-select a label.script { background-color: #f12b2b; }
+
+#switcher .theme-select a small { font-family: Arial, Tahoma, sans-serif; display: block; clear: both; font-size: 9px; color: #999; text-transform: uppercase; }
+
+#switcher .theme-select ul {
+	display: none;
+	width: 401px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	background-color: #111;
+	font-size: 0.875em;
+}
+
+#switcher .theme-select:hover ul { display: block; }
+
+#switcher .theme-select ul li {
+	width: 200px;
+	margin: 0;
+	padding: 0;
+	line-height: 1.2em;
+	float: left;
+	border-top: 1px solid #222;
+}
+
+#switcher .theme-select ul li:nth-child(even) {
+	border-left: 1px solid #222;
+}
+
+#switcher .theme-select ul li a span { color: #fc0; }
+
+#switcher ul li.preview-type, #switcher ul li.utils { font-size: 1.286em; padding: 0; }
+
+#switcher ul li.preview-type a, #switcher ul li.utils a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+}
+
+#switcher ul li.preview-type a:hover, #switcher ul li.utils a:hover { background-color: #222; color: #fff; }
+#switcher ul li.preview-type a.active { background-color: #444; color: #fff; }
+
+#switcher ul li.utils { float: right; }
+
+#switcher ul li.utils a.buy { background-color: #0fba74; color: #fff; }
+#switcher ul li.utils a.buy:hover { background-color: #1fd98d; }
+
+#preview { position: relative; display: block; top: 40px; z-index: 8; padding: 0; margin: 0 auto; }
+#preview-frame { display: block; border: 0; margin: 0 auto; padding: 0; }
+#preview-frame body {  overflow: hidden!important; }
+
+#preview.tablet { height: 1024px; padding: 30px 0; }
+#preview.tablet #preview-frame { width: 768px; height: 1024px; }
+
+#preview.phone { height: 568px; padding: 30px 0; }
+#preview.phone #preview-frame { width: 320px; height: 568px; }
+
+@media screen and (max-device-width: 1024px) {
+	#switcher ul li.preview-type { display: none; }
+}
