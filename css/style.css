@@ -97,27 +97,127 @@ div#content {
     border-top: 1px solid #e51d1d;
 }
 
+.title_personal {
+    width: 33%;
+    display: block;
+    float: left;
+}
+
+.content_personal {
+    width: 66%;
+    display: block;
+    float: left;
+}
+
 /*định dạng phần technical skills*/
 .technical_skills {
     display: block;
-    height: 255px;
+    height: 300px;
     border-top: 1px solid #e51d1d;
+}
+
+.title_technical {
+    width: 33%;
+    float: left;
+    display: block;
+}
+
+.content_technical {
+    width: 66%;
+    display: block;
+    float: left;
+}
+
+.skillbar {
+    display: inline-block;
+    width: 100%;
+}
+
+.container {
+    float: left;
+    display: block;
+    width: 10%;
+}
+
+div.skillbar>p {
+    width: 10%;
+    float: left;
+    display: block;
 }
 
 
 /*định dạng phần work experience*/
 .work_experience {
     display: block;
-    height: 255px;
+    height: 500px;
     border-top: 1px solid #e51d1d;
 }
 
+.title_experience {
+    display: block;
+    width: 33%;
+    float: left;
+}
+
+.content_experience {
+    display: block;
+    width: 66%;
+    float: left;
+}
+
+.content1_exp {
+    display: inline-block;
+    width: 100%;
+    /* float: left; */
+}
+
+.content2_exp {
+    display: inline-block;
+    width: 100%;
+    /* float: left; */
+}
+
+.content1_left {
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.content1_right {
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.content2_left {
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.content2_right {
+    display: block;
+    width: 50%;
+    float: left;
+}
 
 /*định dạng phần education*/
 .education {
     display: block;
-    height: 255px;
+    height: 400px;
     border-top: 1px solid #e51d1d;
+}
+
+.title_education {
+    width: 33%;
+    display: block;
+    float: left;
+}
+
+.content_education {
+    width: 66%;
+    float: left;
+    display: block;
 }
 
 
@@ -128,4 +228,76 @@ div#content {
     border-top: 1px solid #e51d1d;
 }
 
+.title_work {
+    display: block;
+    width: 33%;
+    float: left;
+}
+
+.content_work {
+    display: block;
+    width: 66%;
+    float: left;
+}
+
+div.content_button>ul>li {
+    list-style: none;
+    float: left;
+    margin: 0 3px 5px;
+    background-color: #dddd;
+    color: #555555;
+    cursor: pointer;
+    line-height: 2em;
+    -webkit-border-radius: 3px;
+    display: inline-block;
+}
+
 /*định dạng phần footer*/
+.title_work {
+    display: block;
+    width: 33%;
+    float: left;
+}
+
+.content_work {
+    display: block;
+    width: 66%;
+    float: left;
+}
+
+div.content_button>ul>li {
+    list-style: none;
+    float: left;
+    margin: 0 3px 5px;
+    background-color: #dddd;
+    color: #555555;
+    cursor: pointer;
+    line-height: 2em;
+    -webkit-border-radius: 3px;
+    display: inline-block;
+}
+
+.contact {
+    display: block;
+    border-top: 1px solid #e51d1d;
+    padding-left: 20px;
+    height: 255px;
+}
+
+.contact_me {
+    display: block;
+    width: 33%;
+    float: left;
+}
+
+.contact_button {
+    display: block;
+    width: 33%;
+    float: left;
+}
+
+.contact_copy {
+    display: block;
+    width: 33%;
+    float: left;
+}
