@@ -1,11 +1,11 @@
 /*CSS document*/
-body {
-    background: #e51d1d;
-    font-family: 'Open Sans', sans-serif;
+body{
+	background-color:#e51d1d;
+	font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
-
+	
 div#container {
     width: 1170px;
     display: block;
@@ -129,6 +129,20 @@ div.phone_contact>ul>li {
 }
 
 /*định dạng content*/
+p.em {
+    margin-left: 2.5em;
+}
+
+p.em.top {
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: -0.07em;
+    padding: 0;
+    margin-left: 1.2em;
+    line-height: 0em;
+    margin-top: 0.6em;
+}
+
 div#content {
     width: 100%;
     display: block;
@@ -136,9 +150,10 @@ div#content {
 }
 /*định dạng phần personal profile*/
 .personal_profile {
-    height: 255px;
+    height: 15em;
     display: block;
     border-top: 1px solid #e51d1d;
+    padding-top:2em;
 }
 
 .title_personal {
@@ -153,11 +168,20 @@ div#content {
     float: left;
 }
 
+div.content_personal>p {
+    margin-top: 0em;
+}
+
 /*định dạng phần technical skills*/
 .technical_skills {
     display: block;
     height: 300px;
     border-top: 1px solid #e51d1d;
+    padding-top:2em;
+}
+
+div.content_technical>p {
+    margin-top: 0em;
 }
 
 .title_technical {
@@ -189,12 +213,60 @@ div.skillbar>p {
     display: block;
 }
 
+/*định dạng phần skillbar*/
+.skill {
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+.skill_container {
+    width: 90%;
+    background-color: #ddd;
+}
+
+.skills {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+    color: white;
+}
+
+.html {
+    width: 70%;
+    background-color: #2196F3;
+}
+
+.css {
+    width: 70%;
+    background-color: #2196F3;
+}
+
+.js {
+    width: 45%;
+    background-color: #f44336;
+}
+
+.design {
+    width: 10%;
+    background-color: #808080;
+}
+
 
 /*định dạng phần work experience*/
 .work_experience {
     display: block;
-    height: 500px;
+    height: 30em;
     border-top: 1px solid #e51d1d;
+    padding-top:2em;
+}
+
+div.content1_left>h3 {
+    margin-top: 0.3em;
+}
+
+div.content1_right>p {
+    margin-top: 0.3em;
 }
 
 .title_experience {
@@ -212,13 +284,16 @@ div.skillbar>p {
 .content1_exp {
     display: inline-block;
     width: 100%;
-    /* float: left; */
+    border-bottom: 1px solid #cccccc8a;
 }
 
 .content2_exp {
     display: inline-block;
     width: 100%;
-    /* float: left; */
+}
+
+span {
+    font-weight: bold;
 }
 
 .content1_left {
@@ -264,12 +339,17 @@ div.skillbar>p {
     display: block;
 }
 
+.edu_top {
+    border-bottom: 1px solid #cccccc87;
+}
+
 
 /*định dạng phần work example*/
 .work_example {
     display: block;
-    height: 255px;
+    height: 40em;
     border-top: 1px solid #e51d1d;
+    padding-top:2em;
 }
 
 .title_work {
@@ -295,6 +375,56 @@ div.content_button>ul>li {
     -webkit-border-radius: 3px;
     display: inline-block;
 }
+
+div.content_button>ul>li:hover {
+    background-color: #000;
+    color:#fff;
+}
+
+.img_row1 {
+    width: 100%;
+    display: block;
+}
+
+.img_row2 {
+    display: block;
+    width: 100%;
+    /* float: left; */
+}
+
+.img_row3 {
+    display: block;
+    width: 100%;
+}
+
+.img_col1_left {
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.img_col1_right {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+img.img_one {
+    width: 10em;
+    height: 10em;
+    float: left;
+    margin-bottom: 1em;
+    padding-right: 1.2em;
+}
+
+.content_example {
+    clear: both;
+    padding-top: 2em;
+}
+
+/*div.content_button>ul>li:active {
+    background-color: #e51d1d;
+}*/
 
 /*định dạng phần footer*/
 .title_work {
@@ -324,23 +454,14 @@ div.content_button>ul>li {
 .contact {
     display: block;
     border-top: 1px solid #e51d1d;
-    padding-left: 2em;
     padding-top: 2em;
-    height: 15em;
+    height: 20em;
 }
 
 .contact_me {
     display: block;
     width: 33%;
     float: left;
-}
-
-div.contact_me>h2 {
-    font-size: 2em;
-    font-weight: 800;
-    letter-spacing: -0.07em;
-    margin: 0 0 10px 0;
-    padding: 0;
 }
 
 .contact_button {
@@ -353,4 +474,90 @@ div.contact_me>h2 {
     display: block;
     width: 33%;
     float: left;
+}
+
+input.ct_btn {
+    width: 100%;
+    height: 3em;
+    border-radius: 0.3em;
+    border: 1px solid #00000075;
+    margin-bottom: 1em;
+}
+
+input.ct_btn.one {
+    margin-top: 0.5em;
+}
+
+input.ct_btn.last {
+    height: 7.5em;
+}
+
+input.ct_btn.last {
+    height: 7.5em;
+}
+
+div.contact_button>button {
+    width: 10em;
+    height: 3em;
+    background-color: #e51d1d;
+    border-radius: 0.3em;
+    border: 1px solid #e51d1d;
+    color: #060000;
+}
+
+div.contact_button>button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+div.contact_button>button:hover>a {
+    color: #fff;
+}
+
+div.contact_button>button:hover>i {
+    color: #fff;
+}
+
+i.fa.fa-envelope {
+	color: #060000;
+}
+
+div.contact_button>button>a {
+    text-decoration: none;
+    color: #000;
+    padding-left: 5px;
+}
+
+div.contact_copy>h2 {
+    font-size: 1em;
+    margin-left: 2em;
+    line-height: 0em;
+}
+
+div.contact_copy>p {
+    margin-left: 2em;
+}
+
+div.contact_copy>button {
+    width: 10em;
+    height: 2.5em;
+    margin-left: 2.5em;
+    border-radius: 0.3em;
+    border: 1px solid #e51d1d;
+    background-color: #e51d1d;
+}
+
+div.contact_copy>button>a {
+    text-decoration: none;
+    color: #000;
+    padding-left: 5px;
+}
+
+div.contact_copy>button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+div.contact_copy>button:hover>a {
+    color: #fff;
 }
